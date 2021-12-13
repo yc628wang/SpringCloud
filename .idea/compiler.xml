@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Zuul" />
+        <module name="Feign" />
+        <module name="Ribbon" />
+        <module name="Eureka_Consumer" />
+        <module name="Eureka_Server" />
+        <module name="Eureka_Client" />
+      </profile>
+      <profile name="Annotation profile for SpringCloud" enabled="true">
+        <sourceOutputDir name="../Eureka_Client/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../Eureka_Client/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Eureka_Client2" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Eureka_Client" options="-parameters" />
+      <module name="Eureka_Client2" options="-parameters" />
+      <module name="Eureka_Consumer" options="-parameters" />
+      <module name="Eureka_Server" options="-parameters" />
+      <module name="Feign" options="-parameters" />
+      <module name="Ribbon" options="-parameters" />
+      <module name="SpringCloud" options="-parameters" />
+      <module name="Zuul" options="-parameters" />
+    </option>
+  </component>
+</project>

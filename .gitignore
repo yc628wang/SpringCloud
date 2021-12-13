@@ -1,0 +1,7 @@
+# Project exclude paths
+/Eureka_Client/target/
+/Eureka_Client2/target/
+/Eureka_Consumer/target/
+/Eureka_Server/target/
+/Ribbon/target/
+/Zuul/target/
